@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Dekstop */
+header {
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Header */
+body {
+    font-size: 20px;
+}
+.navbar > img {
+    height: 100%;
+    width: 50px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+}
+.menu-item {
+    border: 1px solid black;
+    padding: 4px 18px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+header {
+    border-bottom: 1px solid black;
+}
+
+/* Hero */
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    row-gap: 40px;
+}
+.hero-title > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.hero-title > h6 {
+    font-size: 20px;
+    color: grey;
+}
+
+/* about contact */
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    gap: 40px;
+}
+.about-contact {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.about-img {
+    height: 100%;
+    width: 700px;
+    border-radius: 4px;
+}
+.content-caption > p {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+    margin-bottom: 20px;
+}
+.content-person > img {
+    border-radius: 100%;
+}
+.person-info > h6 {
+    font-weight: bold;
+}
+.person-info > p {
+    font-style: italic;
+    color: grey;
+    margin-bottom: 40px;
+}
+.about-content > hr {
+    border: 2px solid #d6d4d4;
+    width: 100px;
+    border-radius: 50px;
+}
+
+/*about-information*/
+.about-information > h6 {
+    font-weight: bold;
+    width: 80%;
+}
+.list-number {
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #999;
+}
+.lingkaran {
+    width: 40px;
+	height: 40px;
+	background-color: #f7f4f4;
+	border-radius: 100%;
+}
+.list-paragraf {
+    color: #999;
+}
+.list {
+    padding: 7px;
+}
+.kolom-paragraf {
+    padding-left: 10px;
+}
+
+/*contact us*/
+.contact {
+    width: 40%;
+    background-color: rgb(226, 223, 223);
+    height: max-content;
+}
+.contact-card {
+    padding: 50px;
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+}
+h4 {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.card-title > p {
+    color: grey;
+    margin-bottom: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"] {
+    width: 330px;
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+select {
+    height: 40px;
+    width: 338px;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+::placeholder {
+    color: #999;
+    padding-left: 10px;
+}
+select:required:invalid {
+    color: #999;
+    padding-left: 10px;
+}
+option[value=""][disabled] {
+    color: #999;
+}
+option {
+    color: #000;
+}
+input[type="submit"][value="SEND"] {
+    width: 338px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Package */
+#package {
+    padding-top: 30px;
+}
+.box-package {
+    background-color: #ece9e9;
+}
+.package-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    row-gap: 40px;
+}
+.package-title > h1 {
+    font-size: 45px;
+    font-weight: bold;
+    padding: 20px;
+}
+.buah {
+    display: flex;
+    padding: 40px;
+}
+.buah > div {
+    padding: 15px;
+}
+.ikon {
+    background-color: #e2dddd;
+    border-radius: 100%;
+    flex-basis: 30px;
+    height: 20px;
+}
+.ikon > img {
+    width: 20px;
+}
+#package > hr {
+    border: 2px solid #d6d4d4;
+    width: 200px;
+    border-radius: 50px;
+}
+
+/* Call */
+.cl-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    row-gap: 40px;
+}
+.cl-title > h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+.cl-title > h6 {
+    font-size: 20px;
+    color: grey;
+    width: 700px;
+}
+.call-to-action {
+    text-align: center;
+    padding-bottom: 50px;
+}
+input[type="submit"][value="CALL TO ACTION"] {
+    width: 338px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer > img {
+    width: 50px;
+}
+footer > div {
+    padding: 15px;
+    text-align: center;
+    color: grey;
+    margin-bottom: 10px;
+}

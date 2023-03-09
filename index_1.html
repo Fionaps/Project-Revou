@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Halaman 1</title>
+        <link rel="stylesheet" href="/css/index_1.css">
+    </head>
+    <body>
+        <header>
+            <navbar class="container">
+                <div class="navbar">
+                    <img src="/photo/revou.png" alt="Logo revou">
+                    <div class="menu">
+                        <a class="menu-item" href="#">Home</a>
+                        <a class="menu-item" href="#">My Profile</a>
+                        <a class="menu-item" href="#">Portofolio</a>
+                        <a class="menu-item" href="#">Message Us</a>
+                    </div>
+                </div>
+            </navbar>
+        </header>
+
+        <div class="Judul">
+            <h1>Form Belajar</h1>
+            <p>Ini adalah latihan website pertama</p>
+        </div>
+
+        <main>
+            <!--Form-->
+            <div id="form">
+                <table>
+                    <form>
+                        <tr>
+                            <td><label for="name">Nama</label></td>
+                            <td>:</td>
+                            <td><input id="name" type="text" placeholder="Nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tanggal lahir">Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td><input id="tanggal lahir" type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="jenis kelamin">Jenis Kelamin</label></td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" id="laki-laki" name="jenis kelamin" value="Laki-Laki">
+                                <label for="radio">Laki-Laki</label>
+                                <input type="radio" id="perempuan" name="jenis kelamin" value="Perempuan">
+                                <label for="radio">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesan">Pesan</label></td>
+                            <td>:</td>
+                            <td><textarea rows="10" placeholder="Pesan"></textarea ></td>
+                        </tr>
+                    </form>
+                </table>
+                <input type="submit" value="Submit">
+            </div>
+
+            <!--Tabel-->
+            <div id="tabel">
+                <table>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Tanggal Lahir</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Pesan</th>
+                        <th>Profile</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tr>
+                        <td>Ade Loveiance</td>
+                        <td>Desember 10, 1915</td>
+                        <td>Perempuan</td>
+                        <td>Belajar Buat Website</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td id="delete"><a href="#"><img src="/photo/delete.png" alt="ikon sampah"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Grace Happer</td>
+                        <td>Desember 11, 1906</td>
+                        <td>Perempuan</td>
+                        <td>Hello World</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td id="delete"><a href="#"><img src="/photo/delete.png" alt="ikon sampah"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Margaret Hamilton</td>
+                        <td>August 17, 1936</td>
+                        <td>Perempuan</td>
+                        <td>Test Dulu</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td id="delete"><a href="#"><img src="/photo/delete.png" alt="ikon sampah"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Joan Ciarke</td>
+                        <td>June 24, 1917</td>
+                        <td>Laki-Laki</td>
+                        <td>Selalu Semangat</td>
+                        <td><a href="#">Klik Disini</a></td>
+                        <td id="delete"><a href="#"><img src="/photo/delete.png" alt="ikon sampah"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

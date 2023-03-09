@@ -1,0 +1,92 @@
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+}
+.navbar > img {
+    width: 70px;
+}
+.menu-item {
+    border: 1px solid black;
+    padding: 4px 18px;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+header {
+    border-bottom: 1px solid black;
+}
+.Judul {
+    padding: 10px 130px;
+}
+main {
+    padding-left: 130px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+#form {
+    margin-top: 20px;
+}
+#form table, th, td {
+    vertical-align: top;
+    line-height: 40px;
+}
+input[type="text"] {
+    width: 298px;
+    border-radius: 4px;
+    height: 30px;
+    border: 1px solid black;
+}
+input[type="date"] {
+    width: 301px;
+    border-radius: 4px;
+    height: 34px;
+    border: 1px solid black;
+}
+textarea {
+    margin-top: 5px;
+    width: 305px;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+input[type="submit"] {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid black;
+    color: black;
+    padding: 8px 32px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    content: "";
+    display: table;
+    clear: both;
+    width: 420px;
+}
+#tabel table, #tabel th, #tabel td {
+    margin-top: 25px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+}
+#tabel th, #tabel td {
+    padding: 3px;
+}
+#delete > a > img {
+    margin-top: 15px;
+    width: 30px;
+}

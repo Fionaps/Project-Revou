@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="/css/index_4.css">
+        <script src="/js/app.js"></script>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <navbar class="container">
+                <div class="navbar">
+                    <img src="/photo/revou.png" alt="">
+                    <div class="menu">
+                        <a class="menu-item" href="#home">Home</a>
+                        <a class="menu-item" href="#our-profile">Our Profile</a>
+                        <a class="menu-item" href="#portofolio">Portofolio</a>
+                        <a class="menu-item" href="#message-us">Message Us</a>
+                    </div>
+                </div>
+            </navbar>
+        </header>
+
+        <!--main-->
+        <main>
+            <div id="home">
+                <div class="judul">
+                    <h1>Hi <span></span>, Welcome To Website</h1>
+                    <p>Ini adalah website latihan pertama</p>
+                </div>
+                <img src="/photo/arima.jpg" alt="">
+            </div>
+        </main>
+        <aside>
+            <!-- our-profile -->
+            <div id="our-profile">
+                <h2>Our Headquarter</h2>
+                <section>
+                    <div class="jakarta">
+                        <div class="lingkaran"></div>
+                        <h4>Jakarta</h4>
+                    </div>
+                    <div class="bandung">
+                        <div class="lingkaran"></div>
+                        <h4>Bandung</h4>
+                    </div>
+                    <div class="surabaya">
+                        <div class="lingkaran"></div>
+                        <h4>Surabaya</h4>
+                    </div>
+                </section>
+            </div>
+        </aside>
+        <article>
+            <h2>Messsage Us</h2>
+            <!-- message-us -->
+            <div id="message-us">
+                <!--Form-->
+                <div id="form">
+                    <form name="message-form" onsubmit="return validateform()">
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="">Nama</label>
+                            </div>
+                            <div class="col-75">
+                                <input name="nama" type="text" placeholder="Nama">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="">Tanggal Lahir</label>
+                            </div>
+                            <div class="col-75">
+                                <input name="tanggal-lahir" type="date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="">Jenis Kelamin</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="radio" id="laki-laki" name="jenis-kelamin" value="Laki-Laki">
+                                <label for="radio">Laki-Laki</label>
+                                <input type="radio" id="perempuan" name="jenis-kelamin" value="Perempuan">
+                                <label for="radio">Perempuan</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="">Pesan</label>
+                            </div>
+                            <div class="col-75">
+                                <textarea name="pesan" rows="10" placeholder="Pesan"></textarea>
+                            </div>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div id="sender">
+                    <div>Current Time :<span id="time"> </span></div>
+                    <br>
+                    <div>Nama : <span id="sender-nama"></span></div>
+                    <div>Tanggal Lahir : <span id="sender-tanggal-lahir"></span></div>
+                    <div>Jenis Kelamin : <span id="sender-jenis-kelamin"></span></div>
+                    <div>Pesan : <span id="sender-pesan"></span></div>
+                </div>
+            </div>
+        </article>
+        <footer>
+            <p>created by fiona</p>
+        </footer>
+</html>
